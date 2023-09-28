@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/ic_launcher_foreground"
+    >
+
+
+    <CheckBox
+        android:id="@+id/chbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="52dp"
+        android:layout_x="86dp"
+        android:layout_y="460dp"
+
+
+        android:background="#A32196F3"
+        android:fontFamily="sans-serif-black"
+        android:text="Acepta los terminos de Condicion"
+        android:textColor="#8BFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contraTxt" />
+
+    <Button
+        android:id="@+id/btnSeleccionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="184dp"
+        android:layout_x="35dp"
+        android:layout_y="558dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="btnCheck"
+        android:text="Iniciar"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chbox"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="180dp"
+        android:layout_x="219dp"
+        android:layout_y="559dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="irAct2"
+        android:text="registrarse"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSeleccionar"
+        app:layout_constraintTop_toBottomOf="@+id/chbox"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageView
+        android:id="@+id/perfilImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
+        android:layout_x="143dp"
+        android:layout_y="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        />
+
+    <EditText
+        android:id="@+id/usuarioTxt"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/perfilImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_x="41dp"
+        android:layout_y="343dp"
+        android:background="#9CE8E8E8"
+        android:ems="10"
+        android:hint="Correo/Usuario"
+        android:inputType="textPersonName"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/contraTxt"
+        android:layout_width="334dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/usuarioTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:layout_x="42dp"
+        android:layout_y="404dp"
+        android:background="#9CE8E8E8"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioTxt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="84dp"
+        android:layout_x="86dp"
+        android:layout_y="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Iniciar sesión"
+        android:textSize="30dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
