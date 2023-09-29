@@ -7,12 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     private CheckBox seleccionarChBox;
+    Button irDisposi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +22,15 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         seleccionarChBox = (CheckBox) findViewById(R.id.chbox);
-
     }
 
     public void irAct2(View vista){
         Intent miIntento = new Intent(this, RegistroActivity.class);
+        startActivity(miIntento);
+    }
+
+    public void irDisposi(View vista){
+        Intent miIntento = new Intent(this, DisposiActivity.class);
         startActivity(miIntento);
     }
 

@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     Button login;
@@ -26,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent myIntent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(myIntent);
+                finish();
             }
         });
     }
