@@ -1,146 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@drawable/ic_launcher_foreground"
-    >
+    android:backgroundTint="@color/black"
+    android:background="@drawable/geometrico"
+    tools:context=".LoginActivity">
 
-
-    <CheckBox
-        android:id="@+id/chbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="52dp"
-        android:layout_x="86dp"
-        android:layout_y="460dp"
-
-
-        android:background="#A32196F3"
-        android:fontFamily="sans-serif-black"
-        android:text="Acepta los terminos de Condicion"
-        android:textColor="#8BFFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contraTxt" />
 
     <Button
         android:id="@+id/btnSeleccionar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="318dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="20dp"
         android:layout_x="35dp"
         android:layout_y="558dp"
+        android:background="@color/white2"
         android:fontFamily="sans-serif-condensed"
-        android:onClick="btnCheck"
+        android:onClick="irDisposi"
         android:text="Iniciar"
+        android:textColor="@color/black"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chbox"
-        app:layout_constraintVertical_bias="0.839" />
-
-    <Button
-        android:id="@+id/btnRegistrarse"
-        android:layout_width="169dp"
-        android:layout_height="53dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="180dp"
-        android:layout_x="219dp"
-        android:layout_y="559dp"
-        android:fontFamily="sans-serif-condensed"
-        android:onClick="irAct2"
-        android:text="registrarse"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnSeleccionar"
-        app:layout_constraintTop_toBottomOf="@+id/chbox"
-        app:layout_constraintVertical_bias="0.818" />
-
-    <ImageView
-        android:id="@+id/perfilImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="32dp"
-        android:layout_x="143dp"
-        android:layout_y="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        />
+        app:layout_marginBaseline="@dimen/_30ssp" />
 
     <EditText
         android:id="@+id/usuarioTxt"
         android:layout_width="335dp"
-        android:layout_height="38dp"
-        android:layout_below="@+id/perfilImg"
+        android:layout_height="48dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
         android:layout_x="41dp"
         android:layout_y="343dp"
-        android:background="#9CE8E8E8"
+        android:background="#FFFFFF"
         android:ems="10"
-        android:hint="Correo/Usuario"
+        android:maxLength="20"
+        android:fontFamily="sans-serif-light"
+        android:hint="Escriba su usuario..."
         android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/contraTxt"
         android:layout_width="334dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/usuarioTxt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
         android:layout_x="42dp"
         android:layout_y="404dp"
-        android:background="#9CE8E8E8"
+        android:background="@color/white"
         android:ems="10"
-        android:hint="Contraseña"
+        android:maxLength="30"
+        android:fontFamily="sans-serif-light"
+        android:hint="escriba su contraseña..."
+
         android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuarioTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="167dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="84dp"
-        android:layout_x="86dp"
+        android:layout_width="335dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:layout_x="87dp"
         android:layout_y="35dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Iniciar sesión"
-        android:textSize="30dp"
-        android:backgroundTint="@color/white"
+        android:background="@color/grey"
+        android:fontFamily="sans-serif-light"
+        android:text="Usuario"
         android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/buttonDisposi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="52dp"
-        android:onClick="irDisposi"
-        android:text="Saltar"
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="335dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_x="87dp"
+        android:layout_y="35dp"
+        android:background="@color/grey"
+        android:fontFamily="sans-serif-light"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarse" />
+        app:layout_constraintTop_toBottomOf="@+id/usuarioTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="406dp"
+        android:layout_height="52dp"
+        android:background="@color/white2"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Bienvenido!!"
+        android:textColor="@color/white"
+
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/underline_shape"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:minHeight="48dp"
+        android:onClick="irAct2"
+        android:outlineSpotShadowColor="@color/black"
+        android:padding="5dp"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDisposi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/buttonDisposi"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/underline_shape"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:minHeight="48dp"
+        android:onClick="irDisposi"
+        android:outlineSpotShadowColor="@color/black"
+        android:padding="5dp"
+        android:text="Saltar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

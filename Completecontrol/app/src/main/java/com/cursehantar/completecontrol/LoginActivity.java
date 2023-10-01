@@ -1,27 +1,24 @@
 package com.cursehantar.completecontrol;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
+
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
-    private CheckBox seleccionarChBox;
-    Button irDisposi;
+    CheckBox seleccionarChBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        seleccionarChBox = (CheckBox) findViewById(R.id.chbox);
     }
 
     public void irAct2(View vista){
@@ -29,25 +26,11 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(miIntento);
     }
 
-    public void irDisposi(View vista){
+    public void irDisposi(View view){
         Intent miIntento = new Intent(this, DisposiActivity.class);
         startActivity(miIntento);
     }
 
 
-    public void btnCheck(View v){
-        if(seleccionarChBox.isChecked() == true){
-            String mensaje = "Seleccionado";
-            Toast toast = Toast.makeText(this, mensaje, Toast.LENGTH_LONG);
-            //toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.START, 70,0);
-            toast.show();
-        }
-
-        else{
-            String mensaje = "No seleccionado";
-            Toast toast = Toast.makeText(this, mensaje, Toast.LENGTH_LONG);
-            toast.show();
-        }
-    }
 }
 

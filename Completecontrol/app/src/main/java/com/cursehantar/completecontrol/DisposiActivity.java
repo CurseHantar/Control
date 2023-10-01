@@ -4,10 +4,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -53,11 +58,13 @@ public class DisposiActivity extends AppCompatActivity {
 
     }
 
+
     private static class MyOnClickListener implements View.OnClickListener {
         private final Context context;
         private MyOnClickListener(Context context) {
             this.context = context;
         }
+
         @Override
         public void onClick(View v) {
             removeItem(v);
@@ -112,4 +119,5 @@ public class DisposiActivity extends AppCompatActivity {
         adapter.notifyItemInserted(addItemAtListPosition);
         removedItems.remove(0);
     }
+
 }

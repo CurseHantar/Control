@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/inicio"
+        android:title="Inicio"
+        android:icon="@drawable/c"/>
+
+    <item
+        android:id="@+id/dispositivos"
+        android:title="Dispositivos"
+        android:icon="@drawable/sombra"
+        />
+
+    <item
+        android:id="@+id/secreto"
+        android:title="Secreto"/>
+
+    <item
+        android:id="@+id/suscripcion"
+        android:title="Suscripción"
+        android:icon="@drawable/sombra" />
+    <item
+        android:id="@+id/opciones"
+        android:title="Opciones"
+        android:icon="@drawable/sombra" />
+
+</menu>
