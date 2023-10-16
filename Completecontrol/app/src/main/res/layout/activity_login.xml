@@ -9,35 +9,14 @@
     tools:context=".LoginActivity">
 
 
-    <Button
-        android:id="@+id/btnSeleccionar"
-        android:layout_width="318dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:layout_x="35dp"
-        android:layout_y="558dp"
-        android:background="@color/white2"
-        android:fontFamily="sans-serif-condensed"
-        android:onClick="irDisposi"
-        android:text="Iniciar"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_marginBaseline="@dimen/_30ssp" />
-
     <EditText
         android:id="@+id/usuarioTxt"
-        android:layout_width="335dp"
+        android:layout_width="354dp"
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
         android:layout_x="41dp"
         android:layout_y="343dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
         android:maxLength="20"
         android:fontFamily="sans-serif-light"
@@ -51,87 +30,93 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
+
     <EditText
         android:id="@+id/contraTxt"
-        android:layout_width="334dp"
+        android:layout_width="354dp"
         android:layout_height="48dp"
-        android:layout_below="@+id/usuarioTxt"
         android:layout_centerHorizontal="true"
         android:layout_x="42dp"
         android:layout_y="404dp"
-        android:background="@color/white"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
-        android:maxLength="30"
         android:fontFamily="sans-serif-light"
         android:hint="escriba su contraseña..."
-
         android:inputType="textPassword"
+
+        android:maxLength="30"
         android:textColor="@color/white"
         android:textColorHint="@color/grey"
         android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeleccionar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="335dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="354dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
         android:layout_x="87dp"
         android:layout_y="35dp"
-        android:background="@color/grey"
+        android:background="@drawable/rounded_corners2"
+        android:backgroundTint="@color/black3"
         android:fontFamily="sans-serif-light"
         android:text="Usuario"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:ignore="MissingConstraints" />
 
-
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="335dp"
-        android:layout_height="46dp"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
         android:layout_marginTop="20dp"
         android:layout_x="87dp"
         android:layout_y="35dp"
-        android:background="@color/grey"
+        android:background="@drawable/rounded_corners2"
+        android:backgroundTint="@color/black3"
         android:fontFamily="sans-serif-light"
         android:text="Contraseña"
         android:textColor="@color/white"
         android:textSize="30dp"
+        android:gravity="top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usuarioTxt"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+
+        />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="406dp"
-        android:layout_height="52dp"
-        android:background="@color/white2"
-        android:backgroundTint="@color/black"
+        android:layout_width="411dp"
+        android:layout_height="133dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#88000000"
         android:gravity="center"
-        android:text="Bienvenido!!"
+        android:text="Inicia sesion"
         android:textColor="@color/white"
-
+        android:fontFamily="sans-serif-condensed"
         android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="115dp" />
+        tools:layout_editor_absoluteY="-2dp" />
 
     <TextView
         android:id="@+id/btnRegistrarse"
         android:layout_width="320dp"
         android:layout_height="48dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/underline_shape"
+        android:background="@drawable/underline_text"
         android:clickable="true"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
@@ -153,7 +138,7 @@
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginBottom="56dp"
-        android:background="@drawable/underline_shape"
+        android:background="@drawable/underline_text"
         android:clickable="true"
         android:gravity="center_horizontal"
         android:minHeight="48dp"
@@ -169,5 +154,27 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+
+    <Button
+        android:id="@+id/btnSeleccionar"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_x="35dp"
+        android:layout_y="569dp"
+        android:background="@drawable/fondo_dialog"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center|top"
+        android:onClick="irDisposi"
+        android:text="Iniciar"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

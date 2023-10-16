@@ -7,8 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded_corners"
+        tools:ignore="MissingConstraints">
 
+        <TextView
+            android:id="@+id/tituloSaludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/dialogbkg"
+            android:backgroundTint="#1B1B1B"
+            android:gravity="center"
+            android:text="Hola mi estimada gente"
+            android:textColor="@color/white2"
+            android:textSize="30dp" />
 
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="323dp"
+        android:layout_height="63dp"
+        android:background="@drawable/underline_text"
+        android:backgroundTint="@color/white"
+        android:text="Ver si tiene linea abajo"
+        android:textColor="@color/white2"
+        android:gravity="center"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="425dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

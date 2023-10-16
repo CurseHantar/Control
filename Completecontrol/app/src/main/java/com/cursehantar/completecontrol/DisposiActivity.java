@@ -30,6 +30,7 @@ public class DisposiActivity extends AppCompatActivity {
     static View.OnClickListener myOnClickListener;
     private static ArrayList<Integer> removedItems;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +107,12 @@ public class DisposiActivity extends AppCompatActivity {
             }
         }
         return true;
+    }
+
+    private void irButton(){
+        Intent miIntento = new Intent(this, MainActivity.class);
+        startActivity(miIntento);
+
     }
 
     private void addRemovedItemToList() {

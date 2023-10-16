@@ -3,8 +3,8 @@
 
     <style name="Theme.CompleteControl" parent="android:Theme.Material.Light.NoActionBar" />
 
-    <item name="colorPrimary" type="color">@color/color_primary </item>
-    <item name="colorSecundary" type="color">@color/color_secundary </item>
+    <item name="colorPrimary" type="color">@color/color_primary</item>
+    <item name="colorSecundary" type="color">@color/color_secundary</item>
 
     <style name="DialogAnimation">
 
@@ -12,5 +12,14 @@
         <item name="android:windowExitAnimation">@anim/slide_out</item>
 
     </style>
+
+    <style name="Theme.CompleteControl.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CompleteControl.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CompleteControl.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
