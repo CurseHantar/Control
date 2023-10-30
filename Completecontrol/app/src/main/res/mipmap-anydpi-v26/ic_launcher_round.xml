@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/sombra" />
+    <background android:drawable="@color/black" />
     <foreground android:drawable="@drawable/pngegg" />
     <monochrome android:drawable="@drawable/pngegg" />
 </adaptive-icon>

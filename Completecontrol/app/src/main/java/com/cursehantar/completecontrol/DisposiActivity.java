@@ -4,15 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
+
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -60,9 +56,9 @@ public class DisposiActivity extends AppCompatActivity {
     }
 
 
-    private static class MyOnClickListener implements View.OnClickListener {
-        private final Context context;
-        private MyOnClickListener(Context context) {
+    public static class MyOnClickListener implements View.OnClickListener {
+        public final Context context;
+        public MyOnClickListener(Context context) {
             this.context = context;
         }
 
@@ -71,7 +67,7 @@ public class DisposiActivity extends AppCompatActivity {
             removeItem(v);
         }
 
-        private void removeItem(View v) {
+        public void removeItem(View v) {
             int selectedItemPosition = recyclerView.getChildPosition(v);
             RecyclerView.ViewHolder viewHolder = recyclerView.findViewHolderForPosition(selectedItemPosition);
             TextView textViewName = (TextView) viewHolder.itemView.findViewById(R.id.textViewName);
@@ -103,19 +99,25 @@ public class DisposiActivity extends AppCompatActivity {
             if (removedItems.size() != 0) {
                 addRemovedItemToList();
             } else {
-                Toast.makeText(this, "Nothing to add", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Nada para añadir", Toast.LENGTH_SHORT).show();
             }
         }
         return true;
     }
 
-    private void irButton(){
+    public void irMainActivity(View view){
+        Intent intento = new Intent(this, MainActivity.class);
+        startActivity(intento);
+
+    }
+
+    public void irMaps(View view){
         Intent miIntento = new Intent(this, MainActivity.class);
         startActivity(miIntento);
 
     }
 
-    private void addRemovedItemToList() {
+    public void addRemovedItemToList() {
         int addItemAtListPosition = 3;
         data.add(addItemAtListPosition, new DataModel(
                 MyData.nameArray[removedItems.get(0)],

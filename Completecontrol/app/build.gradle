@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
 }
 
 android {
     namespace 'com.cursehantar.completecontrol'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.cursehantar.completecontrol"
@@ -23,7 +24,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), ('proguard-rules.pro')
         }
     }
     compileOptions {
@@ -49,32 +50,37 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
-    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation 'androidx.activity:activity-compose:1.7.0'
     implementation platform('androidx.compose:compose-bom:2023.03.00')
 
-    implementation ("androidx.recyclerview:recyclerview:1.3.1")
+    implementation ('androidx.recyclerview:recyclerview:1.3.2')
     implementation ("androidx.cardview:cardview:1.0.0")
     //implementation ("com.android.support:recyclerview-v7:28.0.0")
     //implementation ("com.android.support:cardview-v7:28.0.0")
+    implementation 'com.google.android.material:material:1.10.0'
 
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
     implementation 'androidx.compose.ui:ui-tooling-preview'
     implementation 'androidx.compose.material3:material3'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
 
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
-    implementation 'com.google.android.libraries.navigation:navigation:5.0.1'
+    //implementation 'com.google.android.gms:play-services-maps:19.2.0'
+
+    //implementation 'com.google.android.libraries.navigation:navigation:3.0.1'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.annotation:annotation:1.7.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    implementation 'androidx.navigation:navigation-fragment:2.7.4'
+    implementation 'androidx.navigation:navigation-ui:2.7.4'
+    //implementation 'com.google.android.gms:play-services-maps:18.2.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -83,4 +89,19 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    //Mapbox
+    //implementation 'com.mapbox.maps:android:10.16.0'
+    //implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:10.16.0'
+
+    //OpenStreetMap
+    implementation 'org.osmdroid:osmdroid-android:6.1.17'
+    implementation 'org.osmdroid:osmdroid-wms:6.1.17'
+    implementation 'org.osmdroid:osmdroid-mapsforge:6.1.17'
+    implementation 'org.osmdroid:osmdroid-mapsforge:6.1.17'
+
+
+    //Para temas THEME
+    //implementation 'com.android.support:appcompat-v7:28.0.0'
+
 }

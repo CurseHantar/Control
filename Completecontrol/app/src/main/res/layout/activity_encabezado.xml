@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
+    android:layout_height="180dp"
     android:gravity="bottom"
-    android:padding="16dp"
+    android:padding="20dp"
     android:background="@color/colorSecundary"
     android:theme="@style/ShapeAppearance.MaterialComponents.Tooltip">
 
@@ -26,20 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:entries="@array/opciones"
+        android:minHeight="48dp"
         android:prompt="@string/NAVIGATION_SETTINGS" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginLeft="1dp"
-        android:layout_marginBottom="1dp"
-        android:drawableLeft="@drawable/plus_icon_152556"
-        android:onClick="añadirDisp"
-        android:text="Añadir Dispositivo"
-        android:textColor="@color/white"
-        android:textSize="19dp"
-        android:textStyle="bold" />
 
 
 </LinearLayout>

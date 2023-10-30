@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".DisposiActivity"
-        android:backgroundTint="@color/black3"
-        android:background="@drawable/ctrl">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisposiActivity"
+    >
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/menuList"
         android:layout_width="match_parent"
         android:layout_height="82dp"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/black3"
+        android:backgroundTint="@color/grey"
         app:title="Dispositivos"
         app:titleTextColor="@android:color/white" />
 
@@ -25,9 +24,10 @@
         android:paddingTop="10dp"
         android:textColor="@color/black"
         android:background="@drawable/fondo_dialog"
+        android:onClick="irMainActivity"
         android:backgroundTint="@color/white2"
         android:layout_marginTop="20dp"
-        android:text="Agregar"
+        android:text="Main"
 
         />
 
@@ -37,20 +37,21 @@
         android:layout_width="match_parent"
         android:layout_height="700dp"
         android:layout_below="@id/menuList"
-        android:background="@drawable/qu_shadow_opacity12"
+        android:background="@color/white"
         android:scrollbars="vertical"
+        android:clickable="true"
         />
 
     <Button
-        android:id="@+id/btnSeleccionar"
+        android:id="@+id/btnMaps"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/fondo_dialog"
         android:fontFamily="sans-serif-condensed"
-        android:onClick="irButton"
+        android:onClick="irMaps"
         android:layout_alignBottom="@+id/my_recycler_view"
-        android:text="Agregar"
+        android:text="Mapas"
         android:textColor="@color/black"
         android:textSize="25dp" />
 

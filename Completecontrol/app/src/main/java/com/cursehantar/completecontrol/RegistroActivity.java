@@ -42,5 +42,6 @@ public class RegistroActivity extends AppCompatActivity {
     public void irLogin(View vista){
         Intent miIntento2 = new Intent(this, LoginActivity.class);
         startActivity(miIntento2);
+        finish();
     }
 }

@@ -6,7 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black3"
     tools:context=".RegistroActivity"
     >
 
@@ -33,7 +32,6 @@
         android:fontFamily="sans-serif-light"
         android:text="Ingrese los siguientes datos para continuar"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/white3"
         android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +47,6 @@
         android:layout_marginTop="9dp"
         android:fillViewport="true"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#1E1E1E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -138,7 +135,6 @@
                     android:layout_marginTop="70dp"
 
                     android:background="@drawable/text_rounded"
-                    android:backgroundTint="@color/white2"
                     android:fontFamily="sans-serif-black"
                     android:minHeight="48dp"
                     android:onClick="comprobarChBox"

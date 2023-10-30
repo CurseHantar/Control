@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void irDisposi(View view){
-        Intent miIntento = new Intent(this, DisposiActivity.class);
+        Intent miIntento = new Intent(this, MainActivity.class);
         startActivity(miIntento);
     }
 

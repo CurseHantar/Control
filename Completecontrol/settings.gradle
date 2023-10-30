@@ -11,8 +11,19 @@ dependencyResolutionManagement {
         repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
         google()
         mavenCentral()
+        //maven {
+        //    url 'https://api.mapbox.com/downloads/v2/releases/maven'
+        //    authentication {
+        //        basic(BasicAuthentication)
+        //    }
+        //    credentials{
+        //        username = 'mapbox'
+//
+        //        password = 'sk.eyJ1IjoiY3Vyc2VoYW50YXIiLCJhIjoiY2xvNTVwaDFyMDJ5bTJqbXlteGR2dzY4YiJ9.piWIaBe1vs-mIUsKlewJzg'
+        //    }
+        //}
     }
 }
 
-rootProject.name = "Complete control"
+rootProject.name = "CompleteControl"
 include ':app'
