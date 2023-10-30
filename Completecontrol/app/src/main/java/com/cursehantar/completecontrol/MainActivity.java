@@ -1,6 +1,7 @@
 package com.cursehantar.completecontrol;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.widget.FrameLayout;
@@ -18,6 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cursehantar.completecontrol.databinding.ActivityMainBinding;
+
+import org.osmdroid.config.Configuration;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
         NavController navControllerBottom = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main_menu);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        //Maps openStretMap
+
+        Configuration.getInstance().load(getApplicationContext(),
+                PreferenceManager.getDefaultSharedPreferences(getApplicationContext()));
 
 
     }

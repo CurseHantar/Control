@@ -44,7 +44,7 @@ public class SlideshowFragment extends Fragment {
         FrameLayout mapContainer = view.findViewById(R.id.map_container);
         mapContainer.addView(mapView);
 
-        GeoPoint startPoint = new GeoPoint(-37.0608324,-88.1804);
+        GeoPoint startPoint = new GeoPoint(-33.4489,-70.6693);
 
         Marker startMarker = new Marker(mapView);
         startMarker.setPosition(startPoint);
@@ -58,7 +58,6 @@ public class SlideshowFragment extends Fragment {
         mapView.getController().setCenter(startPoint);
 
         mapView.getController().setZoom(15);
-
 
 
         mapView.getOverlays().add(new Overlay() {
