@@ -35,6 +35,15 @@
     <string name="menu_slideshow">Mapa</string>
     <string name="title_activity_maps">MapsActivity</string>
 
+    <string name="lblNombre">Nombre</string>
+    <string name="lblEdad">Edad</string>
+    <string name="btnAceptar">Aceptar y Notificar</string>
+
+    <!-- contenido imgButton -->
+    <string name="content_giroscopy">Sensor de giroscopio</string>
+    <string name="content_proximity">Sensor de proximidad</string>
+    <string name="content_rotation">Sensor de rotacion</string>
+
     <!--Google Maps-->
     <string name="google_maps_key">AIzaSyAznfT6TGn40QaKKhv8GyDns1PPahNgJBg</string>
 

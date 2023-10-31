@@ -45,7 +45,7 @@
         android:inputType="textPassword"
 
         android:maxLength="30"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorHint="@color/grey"
         android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSeleccionar"
@@ -128,14 +128,15 @@
         android:text="Registrarse"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonDisposi"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <TextView
-        android:id="@+id/buttonDisposi"
+        android:id="@+id/btnSaltar"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginBottom="56dp"
@@ -145,7 +146,7 @@
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
         android:minHeight="48dp"
-        android:onClick="irDisposi"
+        android:onClick="irMain"
         android:outlineSpotShadowColor="@color/black"
         android:padding="5dp"
         android:text="Saltar"
@@ -157,13 +158,11 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-
     <Button
         android:id="@+id/btnSeleccionar"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
         android:layout_x="35dp"
@@ -171,7 +170,6 @@
         android:background="@drawable/fondo_dialog"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center|top"
-        android:onClick="irDisposi"
         android:text="Iniciar"
         android:textColor="@color/black"
         android:textSize="25dp"
