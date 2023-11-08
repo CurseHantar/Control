@@ -9,10 +9,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="700dp"
-        android:paddingTop="40dp"
+        android:layout_height="match_parent"
         android:background="@color/white"
-        android:scrollbars="vertical"
-        />
+        android:paddingTop="40dp"
+        android:scrollbars="vertical" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

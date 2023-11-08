@@ -34,9 +34,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="176dp"
+        android:layout_width="235dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="renatopinowo@gmail.com"
+        android:text="Todo el control en tus manos."
         android:textColor="@color/black" />
 </LinearLayout>

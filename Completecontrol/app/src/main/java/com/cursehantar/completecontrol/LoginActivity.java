@@ -73,6 +73,8 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(miIntento);
     }
 
+
+    //Cambiar luego a Main activity, disposi es para entrenar
     public void irMain(View view){
         Intent miIntento = new Intent(this, MainActivity.class);
         miIntento.putExtra("nombre", usuarioTxt.getText().toString());

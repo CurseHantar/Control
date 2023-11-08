@@ -1,4 +1,4 @@
-package com.cursehantar.completecontrol;
+package com.cursehantar.completecontrol.sensores;
 
 import android.graphics.Color;
 import android.hardware.Sensor;
@@ -7,8 +7,11 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.cursehantar.completecontrol.R;
 
 public class GyroscopeActivity extends AppCompatActivity {
     private static final String TAG = "Ejemplo Sensor";
@@ -24,8 +27,7 @@ public class GyroscopeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gyroscope);
 
         // Initialize sensor manager
-        sensorManager =
-                (SensorManager) getSystemService(SENSOR_SERVICE);
+        sensorManager =(SensorManager) getSystemService(SENSOR_SERVICE);
 
         // Using gyroscope sensor
         gyroscopeSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
@@ -33,6 +35,7 @@ public class GyroscopeActivity extends AppCompatActivity {
         if(gyroscopeSensor == null) {
             Log.e(TAG, "Gyroscope sensor not available.");
             finish();
+            Toast.makeText(this, "No esta disponible", Toast.LENGTH_SHORT).show();
         }
 
         gyroscopeSensorListener = new SensorEventListener() {

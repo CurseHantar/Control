@@ -8,25 +8,62 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
-    <org.osmdroid.views.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/distanceTextView"
+    <Button
+        android:id="@+id/locationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="488dp"
-        android:padding="16dp"
-        android:text="Distancia entre Santiago y Valparaíso: "
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/rounded_corners"
+        android:text="Mi localización"
+        />
+
+    <Button
+        android:id="@+id/add_marker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="Marcardor"
+        android:layout_gravity="top|center"
+        />
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="Desmarcar"
+        android:layout_gravity="top|right"
+        />
+
+    <Button
+        android:id="@+id/calcular_distancia_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners2"
+        android:text="Calcular distancia"
+        android:layout_gravity="bottom|left"
+        />
 
 
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+
+        >
+
+
+    </org.osmdroid.views.MapView>
+
+    <TextView
+        android:id="@+id/distancia_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="50dp"
+        android:text="Distancia: "
+        android:textSize="20dp"
+        />
 
 </FrameLayout>
 

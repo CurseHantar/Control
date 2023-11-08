@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,40 +8,14 @@
     tools:context=".DisposiActivity"
     >
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/menuList"
-        android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/grey"
-        app:title="Dispositivos"
-        app:titleTextColor="@android:color/white" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/menuList"
-        android:drawableLeft="@drawable/plus_icon_152556"
-        android:paddingTop="10dp"
-        android:textColor="@color/black"
-        android:background="@drawable/fondo_dialog"
-        android:onClick="irMainActivity"
-        android:backgroundTint="@color/white2"
-        android:layout_marginTop="20dp"
-        android:text="Main"
-
-        />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="700dp"
-        android:layout_below="@id/menuList"
+        android:layout_height="716dp"
         android:background="@color/white"
-        android:scrollbars="vertical"
         android:clickable="true"
-        />
+        android:scrollbars="vertical" />
 
     <Button
         android:id="@+id/btnMaps"
@@ -49,9 +24,10 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/fondo_dialog"
         android:fontFamily="sans-serif-condensed"
-        android:onClick="irMaps"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:onClick="irMain"
         android:layout_alignBottom="@+id/my_recycler_view"
-        android:text="Mapas"
+        android:text="Inicio"
         android:textColor="@color/black"
         android:textSize="25dp" />
 

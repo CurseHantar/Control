@@ -139,7 +139,7 @@
         android:id="@+id/btnSaltar"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/underline_text"
         android:backgroundTint="@color/black"
         android:clickable="true"

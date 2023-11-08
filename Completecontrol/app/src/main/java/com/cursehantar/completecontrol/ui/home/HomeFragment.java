@@ -1,7 +1,5 @@
 package com.cursehantar.completecontrol.ui.home;
 
-import static android.content.Intent.getIntent;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,12 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.cursehantar.completecontrol.GyroscopeActivity;
-import com.cursehantar.completecontrol.ProximityActivity;
-import com.cursehantar.completecontrol.R;
-import com.cursehantar.completecontrol.RotationVectorActivity;
 import com.cursehantar.completecontrol.databinding.FragmentHomeBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.cursehantar.completecontrol.sensores.GyroscopeActivity;
+import com.cursehantar.completecontrol.sensores.ProximityActivity;
+import com.cursehantar.completecontrol.R;
+import com.cursehantar.completecontrol.sensores.RotationVectorActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -70,6 +67,7 @@ public class HomeFragment extends Fragment {
         // Inicializar el TextView
         text_home = rootView.findViewById(R.id.text_home);
 
+
         // Obtener el Bundle de la actividad
         bundle = getActivity().getIntent().getExtras();
 
@@ -79,6 +77,8 @@ public class HomeFragment extends Fragment {
             if (saludo != null) {
                 text_home.append("Bienvenido " + saludo + " :D");
             }
+        }else{
+            text_home.append("Hehehehehehe");
         }
 
         return rootView;

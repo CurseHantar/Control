@@ -1,4 +1,4 @@
-package com.cursehantar.completecontrol;
+package com.cursehantar.completecontrol.sensores;
 
 import android.graphics.Color;
 import android.hardware.Sensor;
@@ -8,6 +8,8 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.cursehantar.completecontrol.R;
 
 public class RotationVectorActivity extends AppCompatActivity {
 

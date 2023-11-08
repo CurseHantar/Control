@@ -1,4 +1,4 @@
-package com.cursehantar.completecontrol;
+package com.cursehantar.completecontrol.sensores;
 
 import android.graphics.Color;
 import android.hardware.Sensor;
@@ -7,6 +7,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +17,7 @@ public class ProximityActivity extends AppCompatActivity {
 
     private SensorManager sensorManager;
 
+    private ImageView imageView;
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
 
@@ -37,9 +40,9 @@ public class ProximityActivity extends AppCompatActivity {
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
                 if(sensorEvent.values[0] < proximitySensor.getMaximumRange()) {
-                    getWindow().getDecorView().setBackgroundColor(Color.RED);
+                    getWindow().getDecorView().setBackgroundColor(Color.BLACK);
                 } else {
-                    getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+                    getWindow().getDecorView().setBackgroundColor(Color.WHITE);
                 }
             }
 

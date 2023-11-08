@@ -58,4 +58,14 @@
     <string name="NAVIGATION_SETTINGS">Opcion\nAyuda\nSalir</string>
     <string name="title_activity_main">MainActivity</string>
 
+    <!--Para que funcione la card -->
+
+    <string name="txtNombreCell">NoText</string>
+    <string name="txtNumeroCell">000000000</string>
+    <string name="txtMarcaCell">Compani</string>
+
+    <string name="txtNombreConfig">Nombre de la opcion</string>
+    <string name="txtDescripcion">Descripcion de la opcion</string>
+
+
 </resources>

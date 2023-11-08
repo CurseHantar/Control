@@ -19,24 +19,16 @@
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7" />
-
-        <fragment
-            android:id="@+id/nav_host_fragment_activity_main_menu"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/mobile_navigation"
+            android:layout_weight="13"
             />
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/nav_view_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/windowBackground"
-            app:menu="@menu/menu_nav" />
+            app:menu="@menu/activity_main_drawer" />
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
