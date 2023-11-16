@@ -1,5 +1,6 @@
 package com.cursehantar.completecontrol;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -7,33 +8,41 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
+import com.cursehantar.completecontrol.SQLite.Database;
+import com.cursehantar.completecontrol.cardViewDispositivo.CustomAdapter;
+import com.cursehantar.completecontrol.cardViewDispositivo.DataModel;
 import com.cursehantar.completecontrol.menuItemOptions.HelpActivity;
 import com.cursehantar.completecontrol.menuItemOptions.SettingsActivity;
+import com.cursehantar.completecontrol.ui.gallery.GalleryFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.cursehantar.completecontrol.databinding.ActivityMainBinding;
 
 import org.osmdroid.config.Configuration;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Arrays;
 
+public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
@@ -41,11 +50,13 @@ public class MainActivity extends AppCompatActivity {
         {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Añadiendo nuevo dispositivo", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
+                Snackbar.make(view, "Añadiendo nuevo dispositivo", Snackbar.LENGTH_LONG);
+                mostrarDialogoConfirmacion();
+//
+//
             }
         });
+
 
         //NavigationView
 
@@ -76,6 +87,29 @@ public class MainActivity extends AppCompatActivity {
         Configuration.getInstance().load(getApplicationContext(),
                 PreferenceManager.getDefaultSharedPreferences(getApplicationContext()));
 
+    }
+
+
+    private void mostrarDialogoConfirmacion() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Confirmación");
+        builder.setMessage("¿Estás seguro de que deseas añadir un nuevo dispositivo?");
+        builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+
+            }
+        });
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Acción al presionar "Cancelar" en el diálogo de confirmación
+
+            }
+        });
+
+        builder.show();
     }
 
     @Override
@@ -118,4 +152,36 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
 
     }
+
+    //private void agregarNuevoDispositivo(){
+    //    // Obtén el último ID utilizado en la lista actual de dispositivos
+    //    int ultimoId = 0;
+    //    for (DataModel item : data) {
+    //        if (item.getId_() > ultimoId) {
+    //            ultimoId = item.getId_();
+    //        }
+    //    }
+//
+    //    // Incrementa el último ID en 1 para asignar un nuevo ID único
+    //    int nuevoId = ultimoId + 1;
+//
+    //    // Supongamos que tienes la información del nuevo dispositivo en variables como nombre, número, marca y drawable.
+    //    String nuevoNombre = "Nuevo Dispositivo";
+    //    String nuevoNumero = "Numero Nuevo";
+    //    String nuevaMarca = "Marca Nueva";
+    //    int nuevoDrawable = R.drawable.celular; // Reemplaza con el recurso de drawable correcto
+//
+    //    // Crea un nuevo objeto DataModel con la información del nuevo dispositivo y el nuevo ID único
+    //    DataModel nuevoDispositivo = new DataModel(nuevoNombre, nuevoNumero, nuevaMarca, nuevoId, nuevoDrawable);
+//
+    //    interactArray = Arrays.copyOf(interactArray, interactArray.length + 1);
+    //    interactArray[interactArray.length - 1] = CelularActivity.class;
+//
+    //    data.add(nuevoDispositivo);
+//
+    //    // Notificar al adaptador que los datos han cambiado
+    //    adapter.notifyDataSetChanged();
+    //}
+
+
 }

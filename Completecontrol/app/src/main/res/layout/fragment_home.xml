@@ -7,13 +7,48 @@
     tools:context=".ui.home.HomeFragment">
 
 
+    <TextView
+        android:id="@+id/txtTittleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete control"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+    <TextView
+        android:id="@+id/txtTittleSensores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Sensores"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenProximity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescriptionHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/descriptionHome"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTittleHome" />
 
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:background="@drawable/rounded_corners2"
+        android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white3"
         android:textAlignment="center"
         android:textSize="35sp"
@@ -42,7 +77,7 @@
         android:id="@+id/imagenGiroscopy"
         android:layout_width="111dp"
         android:layout_height="86dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/dialogbkg"
         android:contentDescription="@string/content_giroscopy"
         android:onClick="openGyroscope"
@@ -51,7 +86,7 @@
         android:text="Giroscopio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imagenProximity"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

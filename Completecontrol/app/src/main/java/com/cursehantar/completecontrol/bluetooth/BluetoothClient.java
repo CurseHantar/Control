@@ -20,8 +20,8 @@ import com.cursehantar.completecontrol.R;
 
 public class BluetoothClient extends AppCompatActivity {
 
-    //private static final String APP_NAME = "MiAppBluetooth";
-    //private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); // UUID genérico para SPP (Serial Port Profile)
+    private static final String APP_NAME = "CompleteControl";
+    private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
     private BluetoothDevice serverDevice;
     private BluetoothSocket socket;
@@ -40,13 +40,7 @@ public class BluetoothClient extends AppCompatActivity {
         // Crea una conexión BluetoothSocket
         try {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
+
                 return;
             }
             socket = serverDevice.createRfcommSocketToServiceRecord(UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")); // UUID del servidor

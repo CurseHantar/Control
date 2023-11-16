@@ -1,0 +1,21 @@
+
+E
+java:S1604-"(Make this anonymous inner class a lambda(‚õç8‹•—¬½1
+E
+java:S1604T"(Make this anonymous inner class a lambda(†µè÷8‹•—¬½1
+J
+java:S1604["(Make this anonymous inner class a lambda(€÷È‡úÿÿÿÿ8‹•—¬½1
+c
+java:S20955"FUse try-with-resources or close this "Database" in a "finally" clause.(ûØá¬8£•—¬½1
+D
+java:S1659"'Declare "btnSaltar" on a separate line.(†¿çØ8ª•—¬½1
+S
+java:S11175"6Rename "db" which hides the field declared at line 32.(ûØá¬8±•—¬½1
+X	java:S1254"<This block of commented-out lines of code should be removed.(Í»¦ğ8±•—¬½1
+N
+java:S1172d",Remove this unused method parameter "vista".(ûÃšÜùÿÿÿÿ8³•—¬½1
+H
+java:S1172i"+Remove this unused method parameter "view".(İÛÔı8µ•—¬½1
+j	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÀíƒ8¶•—¬½1
+C
+java:S1068 "&Remove this unused "db" private field.(’ù¯ˆ8½•—¬½1

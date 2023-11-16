@@ -10,10 +10,10 @@
     >
 
     <View
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="127dp"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/white3"
         app:layout_editor_absoluteX="20dp"
         app:layout_editor_absoluteY="20dp"
         tools:ignore="MissingConstraints"
@@ -140,9 +140,8 @@
                 android:fontFamily="sans-serif-black"
                 android:minHeight="48dp"
                 android:onClick="comprobarChBox"
-
+                android:clickable="true"
                 android:text="Acepta los terminos de Condicion"
-                android:textColor="#4E342E"
                 app:layout_constraintBottom_toTopOf="@+id/btnVolver"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
@@ -155,12 +154,11 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="84dp"
                 android:background="@drawable/fondo_dialog"
+                android:backgroundTint="@color/white3"
                 android:enabled="false"
                 android:fontFamily="sans-serif-black"
-                android:onClick="irLogin"
                 android:text="Aceptar"
-                android:textColor="@color/black"
-
+                android:textColor="@color/colorSecundary"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

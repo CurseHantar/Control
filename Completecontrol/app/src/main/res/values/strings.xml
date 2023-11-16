@@ -67,5 +67,9 @@
     <string name="txtNombreConfig">Nombre de la opcion</string>
     <string name="txtDescripcion">Descripcion de la opcion</string>
 
+    <!-- String para textos grandes -->
+
+    <string name="descriptionHome">Hola, para iniciar la aplicacion aun esta en una version de prueba de lo que quiero que llegue a ser,
+    por lo que proximamente se implementaran muchas funciones para dar lo que realmente quiero entregar. Dicho esto, agradezco todo el apoyo entregado</string>
 
 </resources>

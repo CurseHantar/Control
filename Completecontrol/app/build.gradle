@@ -6,14 +6,15 @@ plugins {
 
 android {
     namespace 'com.cursehantar.completecontrol'
+
     compileSdk 34
 
     defaultConfig {
         applicationId "com.cursehantar.completecontrol"
         minSdk 23
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        targetSdk 34
+        versionCode 4
+        versionName "1.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -61,6 +62,9 @@ dependencies {
     //implementation ("com.android.support:cardview-v7:28.0.0")
     implementation 'com.google.android.material:material:1.10.0'
 
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:28.0.0'
+
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
     implementation 'androidx.compose.ui:ui-tooling-preview'
@@ -80,6 +84,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
     implementation 'androidx.navigation:navigation-fragment:2.7.4'
     implementation 'androidx.navigation:navigation-ui:2.7.4'
+    implementation 'com.android.support:support-annotations:28.0.0'
     //implementation 'com.google.android.gms:play-services-maps:18.2.0'
 
     testImplementation 'junit:junit:4.13.2'
@@ -99,8 +104,13 @@ dependencies {
     implementation 'org.osmdroid:osmdroid-wms:6.1.11'
     implementation 'org.osmdroid:osmdroid-mapsforge:6.1.17'
 
+    //Para la implementacion de IA
+    //implementation 'org.deeplearning4j:deeplearning4j-core:1.0.0-beta7'
+    //implementation 'org.nd4j:nd4j-native-platform:1.0.0-beta7'
+
 
     //Para temas THEME
     //implementation 'com.android.support:appcompat-v7:28.0.0'
+
 
 }

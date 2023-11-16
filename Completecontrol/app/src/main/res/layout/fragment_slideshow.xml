@@ -38,7 +38,7 @@
         android:id="@+id/calcular_distancia_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corners2"
+        android:layout_marginLeft="3dp"
         android:text="Calcular distancia"
         android:layout_gravity="bottom|left"
         />

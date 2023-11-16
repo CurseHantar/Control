@@ -1,0 +1,36 @@
+
+p
+java:S1104	"UMake nameArray a static final constant or non-public and provide accessors if needed.(µ“ƒşşÿÿÿÿ
+r
+java:S1104
+"WMake numeroArray a static final constant or non-public and provide accessors if needed.(ÎÊ±•ûÿÿÿÿ
+k
+java:S1104"VMake marcaArray a static final constant or non-public and provide accessors if needed.(Áä‚
+o
+java:S1104"YMake drawableArray a static final constant or non-public and provide accessors if needed.(æÁş
+e
+java:S1104"OMake id_ a static final constant or non-public and provide accessors if needed.(Ó°Ò¶
+J
+java:S1444	"/Make this "public static nameArray" field final(µ“ƒşşÿÿÿÿ
+L
+java:S1444
+"1Make this "public static numeroArray" field final(ÎÊ±•ûÿÿÿÿ
+E
+java:S1444"0Make this "public static marcaArray" field final(Áä‚
+I
+java:S1444"3Make this "public static drawableArray" field final(æÁş
+?
+java:S1444")Make this "public static id_" field final(Ó°Ò¶
+8
+java:S2386	"Make this member "protected".(µ“ƒşşÿÿÿÿ
+8
+java:S2386
+"Make this member "protected".(ÎÊ±•ûÿÿÿÿ
+2
+java:S2386"Make this member "protected".(Áä‚
+3
+java:S2386"Make this member "protected".(æÁş
+3
+java:S2386"Make this member "protected".(Ó°Ò¶
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¦­öÌüÿÿÿÿ

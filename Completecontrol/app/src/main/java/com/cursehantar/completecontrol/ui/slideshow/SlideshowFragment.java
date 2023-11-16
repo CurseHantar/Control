@@ -3,27 +3,20 @@ package com.cursehantar.completecontrol.ui.slideshow;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
-
-import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import android.Manifest;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
-
-
 import com.cursehantar.completecontrol.R;
 import com.cursehantar.completecontrol.databinding.FragmentSlideshowBinding;
-
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
@@ -51,60 +44,6 @@ public class SlideshowFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_slideshow, container, false);
 
-
-        //mapView = new MapView(requireActivity());
-        //mapView.setTileSource(TileSourceFactory.MAPNIK);
-//
-        //FrameLayout mapContainer = view.findViewById(R.id.map_container);
-        //mapContainer.addView(mapView);
-//
-        //GeoPoint startPoint = new GeoPoint(-33.4489,-70.6693);
-//
-        //Marker startMarker = new Marker(mapView);
-        //startMarker.setPosition(startPoint);
-        //startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-//
-        //mapView.getOverlays().add(startMarker);
-//
-        //mapView.setBuiltInZoomControls(true);
-        //mapView.setMultiTouchControls(true);
-//
-        //mapView.getController().setCenter(startPoint);
-//
-        //mapView.getController().setZoom(50);
-//
-//
-        //mapView.getOverlays().add(new Overlay() {
-        //    @Override
-        //    public boolean onSingleTapConfirmed(final MotionEvent e, final MapView mapView) {
-        //        return true;
-        //    }
-        //});
-//
-//
-        //mapView.setTileSource(TileSourceFactory.MAPNIK);
-        //List<GeoPoint> geoPoints = new ArrayList<>();
-        //Polyline line = new Polyline();
-        //line.setPoints(geoPoints);
-        //line.setColor(Color.GREEN);
-        //line.setWidth(5);
-//
-        //mapView.getOverlayManager().add(line);
-//
-//
-        //Drawable customMarker = getResources().getDrawable(R.drawable.dialogbkg);
-//
-        //ArrayList<OverlayItem> items = new ArrayList<>();
-        //items.add(new OverlayItem("Mi marcador", "Descripción", startPoint));
-//
-        //mapView.getOverlays().add(new Overlay() {
-//
-        //    @Override
-        //    public boolean onSingleTapConfirmed(final MotionEvent e, final MapView mapView) {
-//
-        //        return true;
-        //    }
-        //});
 
         //Ubicacion establecida en Santiago
 
@@ -136,7 +75,9 @@ public class SlideshowFragment extends Fragment {
                 } else {
                     GeoPoint startPoint = locationOverlay.getMyLocation();
                     mapView.getController().setCenter(startPoint);
+                    mapView.invalidate(); // Actualiza el mapa
                 }
+
             }
         });
 
@@ -146,7 +87,7 @@ public class SlideshowFragment extends Fragment {
         List<GeoPoint> geoPoints = new ArrayList<>();
         Polyline line = new Polyline();
         line.setPoints(geoPoints);
-        line.setColor(Color.BLUE);
+        line.setColor(Color.RED);
         line.setWidth(5);
 
         mapView.getOverlayManager().add(line);
@@ -155,10 +96,11 @@ public class SlideshowFragment extends Fragment {
         addMarkerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 // Agregar un nuevo marcador en la ubicación actual
                 GeoPoint currentLocation = locationOverlay.getMyLocation();
                 Marker marker = new Marker(mapView);
-                marker.setPosition(currentLocation);
+                //marker.setPosition(currentLocation);
                 mapView.getOverlays().add(marker);
 
                 // Agregar el punto a la lista de puntos para el recorrido
@@ -172,85 +114,89 @@ public class SlideshowFragment extends Fragment {
             }
         });
 
-        //Desmarcar en el mapa (cuando lo clickee)
 
-        // Antes de añadir el marcador, asegúrate de tener una referencia a él
-        //Marker marker = new Marker(mapView);
-        //marker.setPosition(santiago);
-//
-        //// Añade el marcador a la lista de overlays
-        //mapView.getOverlays().add(marker);
-//
-        //// Luego, configura el OnMarkerClickListener
-        //marker.setOnMarkerClickListener(new Marker.OnMarkerClickListener() {
-        //    private long lastClickTime = 0;
-        //    @Override
-        //    public boolean onMarkerClick(Marker marker, MapView mapView) {
-        //        long clickTime = System.currentTimeMillis();
-//
-        //        // Si el tiempo entre clics es menor a 500ms (medio segundo), considera que es un doble clic
-        //        if (clickTime - lastClickTime < 500) {
-        //            // Se hizo doble clic, elimina el marcador
-        //            mapView.getOverlays().remove(marker);
-//
-        //            // Remueve el punto de la lista de puntos para el recorrido
-        //            geoPoints.remove(marker.getPosition());
-//
-        //            // Actualiza la Polyline
-        //            line.setPoints(geoPoints);
-//
-        //            mapView.invalidate(); // Actualiza el mapa
-//
-        //            return true; // Evento manejado
-        //        }
-//
-        //        lastClickTime = clickTime; // Actualiza el tiempo del último clic
-//
-        //        return true; // Evento manejado
-        //    }
-        //});
+        // Añade markador al clickear en el mapa
+        boolean isAddingMarkersEnabled = true;
 
+        Overlay clickOverlay = new Overlay(getContext()) {
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e, MapView mapView) {
+                if (isAddingMarkersEnabled) {
+                    // Obtener las coordenadas del punto donde se hizo clic
+                    GeoPoint tappedPoint = (GeoPoint) mapView.getProjection().fromPixels((int) e.getX(), (int) e.getY());
 
-        //Desmarcar mapa
+                    // Crear y agregar el marcador en el lugar donde se hizo clic
+                    Marker marker = new Marker(mapView);
 
+                    //agregando cordenadas a los marcadores
+                    marker.setPosition(tappedPoint);
+                    marker.setTitle("Cordenadas: "+ tappedPoint.toString());
+
+                    mapView.getOverlays().add(marker);
+
+                    marker.setOnMarkerClickListener(new Marker.OnMarkerClickListener() {
+                        @Override
+                        public boolean onMarkerClick(Marker marker, MapView mapView) {
+                            marker.showInfoWindow();  // Mostrar el cuadro de información del marcador
+                            return true;
+                        }
+                    });
+
+                    // Agregar el punto a la lista de puntos para el recorrido
+                    geoPoints.add(tappedPoint);
+
+                    // Agregar mensajes de depuración
+                    Log.d("Marcador", "Nuevo marcador agregado en: " + tappedPoint);
+
+                    // Actualizar la Polyline
+                    line.setPoints(geoPoints);
+                    mapView.invalidate(); // Actualizar el mapa
+
+                    return true;
+                }
+                return false;
+            }
+        };
+
+        mapView.getOverlays().add(clickOverlay);
+
+        // Botón para desmarcar el mapa
         clearButton = view.findViewById(R.id.clear_button);
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Eliminar todos los overlays
-                //mapView.getOverlays().clear();
+                // Eliminar todos los overlays excepto la posición actual
+                List<Overlay> overlays = mapView.getOverlays();
+                List<Overlay> overlaysToKeep = new ArrayList<>();
+
+                // Identificar y conservar overlays específicos (por ejemplo, MyLocationNewOverlay)
+                for (Overlay overlay : overlays) {
+                    if (overlay instanceof MyLocationNewOverlay || overlay == clickOverlay) {
+                        overlaysToKeep.add(overlay);
+                    }
+                }
+
+                overlays.clear();
+                overlays.addAll(overlaysToKeep);
 
                 // Limpiar la lista de puntos y la polyline
                 geoPoints.clear();
                 line.setPoints(geoPoints);
 
-                mapView.invalidate(); // Actualiza el mapa
+                // Agregar mensajes de depuración
+                Log.d("Limpiar", "Marcadores y overlays limpiados");
+
+                // Actualizar el mapa
+                mapView.getOverlayManager().remove(line);
+                line.setPoints(geoPoints);
+                mapView.getOverlayManager().add(line);
+                mapView.invalidate();
+
+                // Restablecer la posición actual
                 TextView distanciaTextView = view.findViewById(R.id.distancia_textview);
                 distanciaTextView.setText("Distancia: ");
-            }
-        });
 
-
-        //Marcar clickeando el mapa
-
-        mapView.getOverlays().add(new Overlay() {
-            @Override
-            public boolean onSingleTapConfirmed(MotionEvent e, MapView mapView) {
-                // Obtener las coordenadas del punto donde se hizo clic
-                GeoPoint tappedPoint = (GeoPoint) mapView.getProjection().fromPixels((int)e.getX(), (int)e.getY());
-                // Crear y agregar el marcador en el lugar donde se hizo clic
-                Marker marker = new Marker(mapView);
-                marker.setPosition(tappedPoint);
-                mapView.getOverlays().add(marker);
-
-                // Agregar el punto a la lista de puntos para el recorrido
-                geoPoints.add(tappedPoint);
-
-                // Actualizar la Polyline
-                line.setPoints(geoPoints);
-                mapView.invalidate(); // Actualizar el mapa
-
-                return true;
+                // Habilitar nuevamente la adición de marcadores
             }
         });
 
@@ -267,17 +213,18 @@ public class SlideshowFragment extends Fragment {
                     GeoPoint punto1 = geoPoints.get(0);
                     GeoPoint punto2 = geoPoints.get(1);
 
+
                     double distanciaEnKilometros = calcularDistanciaEnKilometros(punto1, punto2);
                     TextView distanciaTextView = view.findViewById(R.id.distancia_textview);
                     distanciaTextView.setText("Distancia: " + distanciaEnKilometros + " Kilometros");
                 } else {
+
+                    Toast.makeText(getContext(),"No has puesto marcador o no tienes los suficientes", Toast.LENGTH_SHORT).show();
                     // No hay suficientes marcadores para calcular la distancia
                     // Puedes mostrar un mensaje al usuario o tomar otra acción adecuada.
                 }
             }
         });
-
-
 
         return view;
 
@@ -336,6 +283,11 @@ public class SlideshowFragment extends Fragment {
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 
         return radioTierraKilometros * c;
+    }
+
+    // Método para actualizar la Polyline
+    private void updatePolyline() {
+
     }
 
 
