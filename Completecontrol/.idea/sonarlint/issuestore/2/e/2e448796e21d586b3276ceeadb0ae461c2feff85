@@ -1,0 +1,8 @@
+
+
+java:S1319!"dThe type of "data" should be an interface such as "List" rather than the implementation "ArrayList".(¢–©Áıÿÿÿÿ
+>
+java:S1604<"(Make this anonymous inner class a lambda(Ö¹™º
+z
+java:S1488)"dImmediately return this expression instead of assigning it to the temporary variable "myViewHolder".(¬åÑ×
+V	java:S125("<This block of commented-out lines of code should be removed.(ĞÑ˜Šÿÿÿÿÿ

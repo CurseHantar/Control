@@ -35,6 +35,9 @@
     <string name="menu_slideshow">Mapa</string>
     <string name="title_activity_maps">MapsActivity</string>
 
+    <string name="content_perfil">Perfil</string>
+    <string name="content_cerrar_sesion">Cerrar sesión</string>
+
     <string name="lblNombre">Nombre</string>
     <string name="lblEdad">Edad</string>
     <string name="btnAceptar">Aceptar y Notificar</string>

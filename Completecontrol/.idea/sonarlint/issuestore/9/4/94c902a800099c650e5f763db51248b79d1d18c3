@@ -1,11 +1,21 @@
 
 E
-java:S1604,"(Make this anonymous inner class a lambda(Î§£¿8ýÑé­½1
-J
-java:S1604m"(Make this anonymous inner class a lambda(Ÿ¤ÐŸþÿÿÿÿ8ýÑé­½1
+java:S1604;"(Make this anonymous inner class a lambda(Î§£¿8ôñ¯¡¿1
+K
+java:S1604™"(Make this anonymous inner class a lambda(œÁÈÌþÿÿÿÿ8ôñ¯¡¿1
+K
+java:S1604£"(Make this anonymous inner class a lambda(Ÿ¤ÐŸþÿÿÿÿ8ôñ¯¡¿1
 c
-java:S1659"FDeclare "txtCorreo" and all following declarations on a separate line.(Ë¡±‡8”Òé­½1
-T
-java:S3972L"7Move this "if" to a new line or add the missing "else".(±Ê“Ë8›Òé­½1
+java:S1659""FDeclare "txtCorreo" and all following declarations on a separate line.(Ë¡±‡8õò¯¡¿1
+n
+java:S1450$"QRemove the "db" field and declare it as a local variable in the relevant methods.(’ù¯ˆ8³Í´¡¿1
+^
+java:S1854U"<Remove this useless assignment to local variable "mensajes".(±¦£Óùÿÿÿÿ8¥³¶¡¿1
+J
+java:S1481C"-Remove this unused "mensajes" local variable.(Œ¹þü8¦³¶¡¿1
+]	java:S125X"<This block of commented-out lines of code should be removed.(Œ›µŽúÿÿÿÿ8ÀÍ´¡¿1
+]	java:S125]"<This block of commented-out lines of code should be removed.(¨ãª²ûÿÿÿÿ8¨³¶¡¿1
 I
-java:S1172ˆ",Remove this unused method parameter "vista".(Âè*8žÒé­½1
+java:S1172Á",Remove this unused method parameter "vista".(Âè*8úó¯¡¿1
+C
+java:S1068$"&Remove this unused "db" private field.(’ù¯ˆ8ÓÍ´¡¿1

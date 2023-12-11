@@ -1,0 +1,32 @@
+
+E
+java:S16048"(Make this anonymous inner class a lambda(±‰÷«8“ŸûÄ1
+E
+java:S1604J"(Make this anonymous inner class a lambda(±‰÷«8”ŸûÄ1
+E
+java:S1604c"(Make this anonymous inner class a lambda(î¹öÄ8ˆÛüÄ1
+J
+java:S1604i"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ÊÂŸüÄ1
+E
+java:S1604|"(Make this anonymous inner class a lambda(ËÏ¦õ8ˆÛüÄ1
+K
+java:S1604‚"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ÊÂŸüÄ1
+K
+java:S1604‹"(Make this anonymous inner class a lambda(›ŠÜ¸şÿÿÿÿ8‰ÛüÄ1
+K
+java:S1604—"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ÊÂŸüÄ1
+Y
+java:S49737"<Strings and Boxed types should be compared using "equals()".(Ó¢û8 ŸûÄ1
+m	java:S116"QRename this field "id_pet" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÊªÎ8ÊŸûÄ1
+s	java:S116"RRename this field "btn_add" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¸¹üÿÿÿÿ8ÌŸûÄ1
+b
+java:S1659"@Declare "age" and all following declarations on a separate line.(¾²˜¸øÿÿÿÿ8úŸûÄ1
+W	java:S125>"<This block of commented-out lines of code should be removed.(úˆ8«Ü¦üÄ1
+W	java:S125P"<This block of commented-out lines of code should be removed.(úˆ8“Ò‹ıÄ1
+X	java:S125g"<This block of commented-out lines of code should be removed.(Ø¨˜¦8“ãüÄ1
+Y	java:S125€"<This block of commented-out lines of code should be removed.(Ø¨˜¦8ËÕãüÄ1
+]
+java:S1854":Remove this useless assignment to local variable "format".(ƒÄÃ”ÿÿÿÿÿ8¶ó¢üÄ1
+N
+java:S1481"+Remove this unused "format" local variable.(ƒÄÃ”ÿÿÿÿÿ8¸ó¢üÄ1
+Y	java:S125"<This block of commented-out lines of code should be removed.(ßÏœ»8…’ŸûÄ1

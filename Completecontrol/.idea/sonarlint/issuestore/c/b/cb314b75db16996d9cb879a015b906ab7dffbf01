@@ -1,17 +1,51 @@
 
+Q
+java:S3740>"/Provide the parametrized type for this generic.(û‚êäşÿÿÿÿ8ê½¬®Å1
 E
-java:S16041"(Make this anonymous inner class a lambda(•¥Ìì8‚Ë±ˆ½1
-C
-java:S1604a"(Make this anonymous inner class a lambda(Ë—€Æşÿÿÿÿ
-C
-java:S1604h"(Make this anonymous inner class a lambda(àâ ıÿÿÿÿ
+java:S1604N"(Make this anonymous inner class a lambda(•¥Ìì8¾Ìõ±Å1
+E
+java:S1604Ü"(Make this anonymous inner class a lambda(½À®8¿Ìõ±Å1
+K
+java:S1604ê"(Make this anonymous inner class a lambda(Ë—€Æşÿÿÿÿ8ÁÌõ±Å1
+K
+java:S1604ü"(Make this anonymous inner class a lambda(àâ ıÿÿÿÿ8ÃÌõ±Å1
+~	java:S1168"]Rename this field "nombre_Dispositivo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğäßùÿÿÿÿ8¼ÔÉÅ1
+`
+java:S1854W"CRemove this useless assignment to local variable "txtNombrePerfil".(©€µ8äÍõ±Å1
+X	java:S125I"<This block of commented-out lines of code should be removed.(ÜÚ¦¨8œƒáÊÅ1
 ‰
-java:S32525"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(õá¬Ëùÿÿÿÿ8¤Ë±ˆ½1
+java:S3252S"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(õá¬Ëùÿÿÿÿ8Îõ±Å1
+`
+java:S1117W"CRename "txtNombrePerfil" which hides the field declared at line 54.(©€µ8 Îõ±Å1
+Q
+java:S1481W"4Remove this unused "txtNombrePerfil" local variable.(©€µ8¢Îõ±Å1
+]	java:S125X"<This block of commented-out lines of code should be removed.(Øı”äÿÿÿÿÿ8ÊĞõ±Å1
+[
+java:S1874t"9Remove this use of "PreferenceManager"; it is deprecated.(ÆÛûùÿÿÿÿ8ìĞõ±Å1
+e
+java:S1874t"CRemove this use of "getDefaultSharedPreferences"; it is deprecated.(ÆÛûùÿÿÿÿ8íĞõ±Å1
+K
+java:S1172–"(Remove this unused method parameter "v".(îš¨³ÿÿÿÿÿ8±’³²Å1
+p	java:S100Ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼äÏÛüÿÿÿÿ8óé¶²Å1
+K
+java:S1172Ÿ"(Remove this unused method parameter "v".(¼äÏÛüÿÿÿÿ8ôé¶²Å1
+p	java:S100§"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Ò€šüÿÿÿÿ8ªú±Å1
+Y	java:S125´"<This block of commented-out lines of code should be removed.(ÅÂ®˜8ùĞõ±Å1
+Y	java:S125î"<This block of commented-out lines of code should be removed.( ì¤û8•Ñõ±Å1
+Y	java:S125ø"<This block of commented-out lines of code should be removed.(í©²¡8–Ñõ±Å1
+Ÿ
+java:S1186ş"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦Œœ¢8Ñõ±Å1
+Y	java:S125‰"<This block of commented-out lines of code should be removed.(§Ä˜8 Ñõ±Å1
+F	java:S108¶")Either remove or fill this block of code.(ºÕæµ8ÄîŒ²Å1
+M
+java:S1068>"+Remove this unused "adapter" private field.(û‚êäşÿÿÿÿ8¥Å¬®Å1
+N
+java:S1068?"1Remove this unused "layoutManager" private field.(üÉÙ¼8¥Å¬®Å1
+J
+java:S1068@"(Remove this unused "data" private field.(¦Ôê«úÿÿÿÿ8¥Å¬®Å1
+b
+java:S1144§"?Remove this unused private "obtener_nombre_Dispositivo" method.(–Ò€šüÿÿÿÿ8ˆáÊÅ1
+P
+java:S1144±"2Remove this unused private "connectToMqtt" method.(€Ğ¨ş8àïîÉÅ1
 T
-java:S1874X"9Remove this use of "PreferenceManager"; it is deprecated.(ÆÛûùÿÿÿÿ
-^
-java:S1874X"CRemove this use of "getDefaultSharedPreferences"; it is deprecated.(ÆÛûùÿÿÿÿ
-—
-java:S1186c"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦Œœ¢
-Q	java:S125x"<This block of commented-out lines of code should be removed.(§Ä˜
-W	java:S125œ"<This block of commented-out lines of code should be removed.( øĞˆúÿÿÿÿ
+java:S1144£"6Remove this unused private "addDataToFirebase" method.(­©¼Ş8®Ñõ±Å1

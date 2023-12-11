@@ -12,11 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.cursehantar.completecontrol.RickRollTroll;
 import com.cursehantar.completecontrol.databinding.FragmentHomeBinding;
 import com.cursehantar.completecontrol.sensores.GyroscopeActivity;
 import com.cursehantar.completecontrol.sensores.ProximityActivity;
 import com.cursehantar.completecontrol.R;
 import com.cursehantar.completecontrol.sensores.RotationVectorActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 
 public class HomeFragment extends Fragment {
 
@@ -26,6 +29,8 @@ public class HomeFragment extends Fragment {
     private Button imagenProximity;
     private Button imagenGyroscope;
     private Button imagenRotationVector;
+    private FirebaseAuth mAuth;
+    private DatabaseReference databaseReference;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -67,18 +72,27 @@ public class HomeFragment extends Fragment {
         // Inicializar el TextView
         text_home = rootView.findViewById(R.id.text_home);
 
+        //String userId = mAuth.getCurrentUser().getUid();
+        //DatabaseReference currentUserDb = databaseReference.child(userId);
+        //currentUserDb.child("usuario");
 
         // Obtener el Bundle de la actividad
         bundle = getActivity().getIntent().getExtras();
 
         if (bundle != null) {
-            String saludo = bundle.getString("nombre");
+            String correo = bundle.getString("nombre");
 
-            if (saludo != null) {
-                text_home.append("Bienvenido " + saludo + " :D");
+            if (correo != null) {
+                text_home.append("Bienvenido " + correo + " :D");
             }
         }else{
-            text_home.append("Hehehehehehe");
+            text_home.append("Click me!!");
+            text_home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(getContext(), RickRollTroll.class));
+                }
+            });
         }
 
         return rootView;

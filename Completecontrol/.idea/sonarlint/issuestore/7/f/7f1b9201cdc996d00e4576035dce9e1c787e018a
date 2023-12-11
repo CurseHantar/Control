@@ -1,0 +1,15 @@
+
+€
+java:S1319$"dThe type of "data" should be an interface such as "List" rather than the implementation "ArrayList".(˜·şz8ô©ç£Å1
+E
+java:S1604>"(Make this anonymous inner class a lambda(Ö¹™º8ù©ç£Å1
+
+java:S1488-"dImmediately return this expression instead of assigning it to the temporary variable "myViewHolder".(¬åÑ×8ü©ç£Å1
+‡
+java:S4165%"eRemove this useless assignment; "context" already holds the assigned value along all execution paths.(ÕÜ–ıÿÿÿÿ8•«ç£Å1
+i
+java:S1659"GDeclare "numeroCell" and all following declarations on a separate line.(Éıëúÿÿÿÿ8ö«ç£Å1
+Q
+java:S1656%"/Remove or correct this useless self-assignment.(ÕÜ–ıÿÿÿÿ8ë°ç£Å1
+I
+java:S1068",Remove this unused "inflater" private field.(Ÿ†õ8ğ°ç£Å1

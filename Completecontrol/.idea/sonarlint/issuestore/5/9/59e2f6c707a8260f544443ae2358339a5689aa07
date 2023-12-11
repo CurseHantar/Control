@@ -1,0 +1,69 @@
+
+M
+java:S1066–"/Merge this if statement with the enclosing one.(ùÏ¥ê8Œ¿üÄ1
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı„ó¢şÿÿÿÿ8¿üÄ1
+s	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì—ûÿÿÿÿ8¿üÄ1
+s	java:S117¬"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø÷¡ùùÿÿÿÿ8¿üÄ1
+E
+java:S1604Q"(Make this anonymous inner class a lambda(‡™¤8¿üÄ1
+J
+java:S1604X"(Make this anonymous inner class a lambda(ğ±ÿ»ûÿÿÿÿ8¿üÄ1
+E
+java:S1604d"(Make this anonymous inner class a lambda(±‰÷«8¿üÄ1
+E
+java:S1604w"(Make this anonymous inner class a lambda(±‰÷«8¿üÄ1
+F
+java:S1604©"(Make this anonymous inner class a lambda(âã«8¿üÄ1
+K
+java:S1604£"(Make this anonymous inner class a lambda(ºŸÊıúÿÿÿÿ8¿üÄ1
+K
+java:S1604¶"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8¿üÄ1
+F
+java:S1604Ä"(Make this anonymous inner class a lambda(€§‚¤8¿üÄ1
+K
+java:S1604Ê"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8¿üÄ1
+E
+java:S1604İ"(Make this anonymous inner class a lambda(—·8¿üÄ1
+K
+java:S1604ã"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8¿üÄ1
+F
+java:S1604ì"(Make this anonymous inner class a lambda(Âæ¿Ñ8¿üÄ1
+K
+java:S1604†"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8‘¿üÄ1
+^
+java:S4973b"<Strings and Boxed types should be compared using "equals()".( šÄ úÿÿÿÿ8•¿üÄ1
+`
+java:S2259—"BA "NullPointerException" could be thrown; "data" is nullable here.(£Ç±ë8‡¿üÄ1
+p	java:S116&"TRename this field "photo_pet" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¼ŠÍ8Š¿üÄ1
+s	java:S116'"RRename this field "btn_add" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¸¹üÿÿÿÿ8Š¿üÄ1
+x	java:S116("WRename this field "btn_cu_photo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¤Ìıÿÿÿÿ8Š¿üÄ1
+w	java:S116("VRename this field "btn_r_photo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¤Ìıÿÿÿÿ8Š¿üÄ1
+}	java:S116)"aRename this field "linearLayout_image_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÀÓ8Š¿üÄ1
+s	java:S116/"WRename this field "storage_path" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÏ”ø8Š¿üÄ1
+u	java:S1164"TRename this field "image_url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¬Õöşÿÿÿÿ8Š¿üÄ1
+K
+java:S1659(")Declare "btn_r_photo" on a separate line.(ä¤Ìıÿÿÿÿ8–¿üÄ1
+b
+java:S1659*"@Declare "age" and all following declarations on a separate line.(¾²˜¸øÿÿÿÿ8–¿üÄ1
+z
+java:S14504"XRemove the "image_url" field and declare it as a local variable in the relevant methods.(¾¬Õöşÿÿÿÿ8˜¿üÄ1
+S
+java:S18748"6Remove this use of "ProgressDialog"; it is deprecated.(ğİıº8·¿üÄ1
+X
+java:S1874A"6Remove this use of "ProgressDialog"; it is deprecated.(¿Ú•ğúÿÿÿÿ8Â¿üÄ1
+W	java:S125j"<This block of commented-out lines of code should be removed.(úˆ8Ç¿üÄ1
+W	java:S125}"<This block of commented-out lines of code should be removed.(úˆ8Ê¿üÄ1
+a
+java:S1874">Remove this use of "startActivityForResult"; it is deprecated.(ô±ÉÊıÿÿÿÿ8Ï¿üÄ1
+g
+java:S1874”"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾8Ï¿üÄ1
+P
+java:S1874Ÿ"2Remove this use of "setMessage"; it is deprecated.(À¼á´8Ñ¿üÄ1
+]
+java:S1854ï":Remove this useless assignment to local variable "format".(ƒÄÃ”ÿÿÿÿÿ8ğ¿üÄ1
+N
+java:S1481ï"+Remove this unused "format" local variable.(ƒÄÃ”ÿÿÿÿÿ8ñ¿üÄ1
+X
+java:S1874"5Remove this use of "onBackPressed"; it is deprecated.(ùÃ¦Õøÿÿÿÿ8ó¿üÄ1
+U
+java:S10681"3Remove this unused "COD_SEL_STORAGE" private field.(¼ÏüÕøÿÿÿÿ8ô¿üÄ1

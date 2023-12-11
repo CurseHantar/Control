@@ -5,14 +5,13 @@ public class DataModel {
     public String name;
     String version;
     String marca;
-    public int id_;
+    //public int id_;
     int image;
 
-    public DataModel(String name, String version, String marca ,int id_, int image) {
+    public DataModel(String name, String version, String marca , int image) {
         this.name = name;
         this.version = version;
         this.marca = marca;
-        this.id_ = id_;
         this.image = image;
     }
 
@@ -32,9 +31,6 @@ public class DataModel {
         this.marca = marca;
     }
 
-    public void setId_(int id_) {
-        this.id_ = id_;
-    }
 
     public void setImage(int image) {
         this.image = image;
@@ -46,10 +42,6 @@ public class DataModel {
 
     public String getVersion() {
         return version;
-    }
-
-    public int getId_() {
-        return id_;
     }
 
     public int getImage() {

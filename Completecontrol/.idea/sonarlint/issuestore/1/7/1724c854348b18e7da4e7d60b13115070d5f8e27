@@ -1,0 +1,36 @@
+
+Q
+java:S37400"/Provide the parametrized type for this generic.(û‚êäşÿÿÿÿ8§ÏòâÃ1
+w
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜ŞäŸ8¯‚ãÃ1
+s	java:S1169"WRename this field "storage_path" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€üøØ8ÉÏòâÃ1
+x
+java:S1450,"VRemove the "binding" field and declare it as a local variable in the relevant methods.(ÓéØıÿÿÿÿ8ÌÏòâÃ1
+y
+java:S14501"\Remove the "layoutManager" field and declare it as a local variable in the relevant methods.(üÉÙ¼8ÌÏòâÃ1
+\
+java:S1161?":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8ÑÏòâÃ1
+S
+java:S2696L"6Make the enclosing method "static" or remove this set.(ãôğë8ÒÏòâÃ1
+]	java:S125D"<This block of commented-out lines of code should be removed.(ı´Šáûÿÿÿÿ8ÒÏòâÃ1
+]	java:S125U"<This block of commented-out lines of code should be removed.(ÒæõÁÿÿÿÿÿ8ÖÏòâÃ1
+Y
+java:S2696”"6Make the enclosing method "static" or remove this set.(”õ¸şÿÿÿÿ8İÏòâÃ1
+M
+java:S1068,"+Remove this unused "binding" private field.(ÓéØıÿÿÿÿ8ŞÏòâÃ1
+K
+java:S10686".Remove this unused "mfirestore" private field.(ƒÂè»8ÚƒÅäÃ1
+F
+java:S10687")Remove this unused "mAuth" private field.(ªĞ”’8ŞÏòâÃ1
+P
+java:S1068:"3Remove this unused "COD_SEL_STORAGE" private field.(œõ½ñ8“„ğâÃ1
+M
+java:S1068;"1Remove this unused "COD_SEL_IMAGE" private field.(ÅòöA8ŞÏòâÃ1
+V
+java:S1144]"9Remove this unused private "readDataFromFirebase" method.(ªÿÉ°8ŞÏòâÃ1
+S
+java:S1144x"6Remove this unused private "addDataToFirebase" method.(­©¼Ş8ŞÏòâÃ1
+V
+java:S1144~"9Remove this unused private "updateDataInFirebase" method.(ç›¶8ßÏòâÃ1
+Y
+java:S1144‡";Remove this unused private "deleteDataFromFirebase" method.(ï¬ã¥8ßÏòâÃ1

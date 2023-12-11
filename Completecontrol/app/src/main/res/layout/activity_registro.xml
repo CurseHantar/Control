@@ -10,25 +10,24 @@
     >
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="127dp"
+        android:layout_height="150dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white3"
         app:layout_editor_absoluteX="20dp"
         app:layout_editor_absoluteY="20dp"
-        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="-5dp" />
+        tools:layout_editor_absoluteY="-5dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="374dp"
+        android:layout_width="match_parent"
         android:layout_height="97dp"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:layout_marginHorizontal="@android:dimen/app_icon_size"
-        android:layout_marginTop="24dp"
-        android:layout_x="61dp"
-        android:layout_y="43dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-light"
         android:text="Ingrese los siguientes datos para continuar"
         android:background="@drawable/rounded_corners"
@@ -42,15 +41,15 @@
     <ScrollView
 
         android:id="@+id/scrollView2"
-        android:layout_width="384dp"
-        android:layout_height="587dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:background="@drawable/rounded_corners"
         android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/view">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +68,7 @@
                 android:ems="10"
                 android:hint="Nombre de usuario"
                 android:inputType="textPersonName"
-                android:maxLength="20"
+                android:maxLength="25"
                 android:minHeight="48dp"
                 android:textColor="@color/black"
                 tools:ignore="ObsoleteLayoutParam"
@@ -137,10 +136,10 @@
 
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/text_rounded"
+                android:clickable="true"
                 android:fontFamily="sans-serif-black"
                 android:minHeight="48dp"
                 android:onClick="comprobarChBox"
-                android:clickable="true"
                 android:text="Acepta los terminos de Condicion"
                 app:layout_constraintBottom_toTopOf="@+id/btnVolver"
                 app:layout_constraintEnd_toEndOf="parent"
